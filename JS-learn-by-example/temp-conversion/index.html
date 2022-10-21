@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label>Enter a temperature:</label><br>
+    <input type="text" id="textBox"><br>
+
+    <label>convert to:</label><br>
+    <input type="radio" id="cButton" name="unit"> <!-- the radio buttons have same name unit, so only one can be selected-->
+    <label>Celsius</label><br>
+    <input type="radio" id="fButton" name="unit">
+    <label>Fahrenheit</label><br>
+
+    <button type="button" id="submitButton">submit</button><br>
+    <label id="tempLabel"></label> <!--empty label to display result; the id is used in js-->
+
+    <script src="index.js"></script>
+</body>
+</html>

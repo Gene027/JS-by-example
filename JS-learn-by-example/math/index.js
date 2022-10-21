@@ -1,0 +1,11 @@
+let x = 3.145;
+// x = Math.round(x);  //rounds x std
+// x = Math.floor(x);  //rounds x down
+// x = Math.ceil(x);  //rounds x up
+// x = Math.pow(x, 2); // raise to power 2
+// x = Math.sqrt(x); // square root
+// x = Math.abs(x); // absolute value
+//max = Math.max(x, y, z); //compare 3 var and return max; or use Math.min
+// x = Math.PI; //shows pi
+// x = Math.random(); // generates random decimal
+// x = Math.floor(Math.random() * 6) + 1; // generates random 1 - 6

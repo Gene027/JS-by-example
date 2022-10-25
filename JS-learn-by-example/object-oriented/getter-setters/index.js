@@ -11,13 +11,13 @@ class Car{
         this._gas = 25;     //  "_" refers to a protected property
         this._power = power;
     }
-    get power(){
+    get power(){   //accessing power property invokes this function
         return `${this._power}hp`;  //automatically adds "hp" whenever u use _power #impl for fetching data in a structured way
     }
-    get gas(){
+    get gas(){   
         return `${this._gas}L (${this._gas / 50 * 100}%)`;
     }
-    set gas(value){    //associated fn with rules for mutability of a class
+    set gas(value){    //associated fn with rules for mutability of a class. mutating gas invokes this function
         if(value > 50){
             value = 50;       //limits tank going >50L
         }

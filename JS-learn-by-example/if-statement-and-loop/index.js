@@ -42,7 +42,7 @@ document.getElementById("myButton").onclick = function(){
 //USING SWITCH
 let grade = 90;
 
-//use switch (grade) to match on string
+//use switch (grade) to match on string instead of plenty if else
 switch(true) {
      case grade >= 90:
         console.log("you did great!");

@@ -18,7 +18,7 @@ for(let i = 0; i < prices.length; i+=1){
     console.log(prices[i]);
 }
 
-for(let i of prices){
+for(let i of prices){  //of is used to iterate over values while 'in' is used for enumerable propeties i.e 1, 2, 3
     console.log(i); // prints element in array method 2
 }
 

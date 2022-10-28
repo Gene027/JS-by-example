@@ -3,7 +3,8 @@
 
 let date = new Date();  //current date and time
 //let date = new Date(0); //epic date
-//let milisecSince1970 = Date.now();   // returns number of ms since jan 1, 1970 till now
+//let milisecSince1970 = Date.now();   // returns number of ms since jan 1, 1970 till now to mark the time for an instance
+//let currentTime = date.getTime();    //will do the same things as above line
 //let date = new Date(2023, 0, 1, 2, 3, 4, 5); // yr,month, day,hr,min,sec,milisec  NB jan is 0
 //let date = new Date("January 1, 2023 00:00:00");
 /*
@@ -25,7 +26,6 @@ date.setMinutes(1);
 date.setSeconds(30);
 date.setMilliseconds(0);
 */
-
 date = date.toLocaleString(); //makes date appear readable
 document.getElementById("myLabel").innerHTML = date;
 

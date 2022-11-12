@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!--for unicode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- -->
+    <!--<meta http-equiv="refresh" content="30">   browser will refresh every 30 seconds -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--scalability on mobile device -->
+    <title>Gene Website</title>      <!--title of page -->
+    <link rel="stylesheet" href="style.css"> <!--link to this css file -->
+</head>
+<body>
+    <!--Hyper Text Markup Language -->
+   <h1 id="top">This is a tutorial page</h1> <!---->
+   <hr>                     <!--horizontal rule to divide a page inte segment -->
+   <p>This is a paragraph</p>  <!-- type Lorem + TAB creates text sample-->
+   <br>                     <!--adds a line break -->
+
+
+<h2>Hyperlinks</h2>
+   <a href="https://www.google.com" target="_blank" title="this takes you to google">   <!--target at _blank opens a new tab on click;
+                                                                                            target = " _self" opens on same tab-->
+    Google          <!--this is a hyperlink and href directs u to the url stated-->
+   </a> 
+   <br>
+   <a href="page2.html" target="_self">
+    Go to page 2
+   </a>
+   <br>
+   <a href="mailto:anonymous027@gmail.com" target="_self">
+    inbox me
+   </a>
+<a href="https://doc.rust-lang.org/stable/book/foreword.html">
+    <img src="rusty.png" height="300" alt="rust error image" title="this is a typical rust error message">  <!--/images/rusty.jpg to target image path; alt is what to show if img doesnt render; title is for hover-->
+   <!--image is now a hyperlink -->
+   <!-- free image sites: pixabay, pexels, gratistography-->
+   <!--reduce pic resolution to speed up render on site and buffer speed-->
+   <!--& is used to add special symbol like &copy -->
+</a>
+<br>
+
+<h3>Audio</h3>
+<audio controls src="Cool Down.mp3"> <!--controls adds ctrl; autoplay; muted; loop; -->
+<!--
+    src="/content/Cool Down.mp3"   if file is in a folder called content relative to html root folder
+    <source src = "Cool Down.mp3">          if u have same music in diff format
+    <source src = "Cool Down.wav">          use these in case a browser cannot play a particular format
+-->
+</audio> 
+
+<br>
+<br>
+
+<h3>Videos</h3>
+<video controls autoplay muted loop src="Jazz.mp4" height="200" width="500"></video>
+<br>
+
+<h2>Text formatting</h2>
+<p> This is a sample text</p>
+<p> This is a <b>bold</b> text</p>
+<p> This is a <i>italic</i> text</p>
+<p> This is a <big>big</big> text</p>
+<p> This is a <small>small</small> text</p>
+<p> This is a <sub>subscript</sub> text</p>
+<p> This is a <sup>superscript</sup> text</p>
+<p> This is a <ins>inserted</ins> text</p>
+<p> This is a <del>deleted</del> text</p>
+<p> This is a <mark>marked</mark> text</p>
+<br><br>
+
+
+<h2>Lists</h2>
+<h4 style="color:darkred">Unordered list</h4>  <!--style adds simple css styling-->
+<ul style="background-color: aliceblue; color: rgb(2, 2, 46);">     
+    <li>Wrist watch</li>
+    <li>Bag
+        <ul>
+            <li>Pen</li>
+            <li>Book</li>
+        </ul>
+    </li>
+    <li>Shoes</li>
+</ul>
+<h4>Ordered list</h4>
+<ol type="1">               <!-- type can be letter A, num, or Rom-num-->
+    <li>Eat</li>
+    <li>Shower</li>
+    <li>Leave for work</li>
+</ol>
+
+<h4>Descriptive list</h4>
+<dl>
+    <dt>HTML</dt>     <!--definition term, term to define -->
+    <dd>This adds structure to a webpage</dd>          <!--description definition -->
+    <dt>CSS</dt>
+    <dd>this adds style to a webpage</dd>
+</dl>
+<br><br>
+
+
+<h2>Tables</h2>
+<h3>Operation</h3>
+<table bgcolor = "black" width = "700">  <!--for the boarders to be black-->
+    <tr bgcolor = "grey"> <!--New table row-->
+        <th width ="100"> Sunday</th> <!--Table header-->
+        <th width ="100">Monday</th>
+        <th width ="100">Tuesday</th>
+        <th width ="100">Wednesday</th>
+        <th width ="100">Thursday</th>
+        <th width ="100">Friday</th>
+        <th width ="100">Saturday</th>
+    </tr> 
+    <tr bgcolor = "ligtgrey" align="center"> <!--second row, new row-->
+        <td>Closed</td>       <!--table data-->
+        <td>Open</td>
+        <td>Open</td>
+        <td>Open</td>
+        <td>Open</td>
+        <td>Open</td>
+        <td>Open</td>
+
+    </tr>
+</table>
+<br><br>
+
+<h2>Span and Div</h2>
+<!--span = adds markup to text or portion of a document, like a target -->
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="color: red;"> Repudiandae impedit perspiciatis et veritatis vel assumenda </span>, 
+    minus fugiat velit cupiditate nam, animi fugit eum error voluptates soluta! Quidem temporibus voluptas odio?        <!--Lorem500 adds lorem text with 500 words -->
+</p>
+
+<!--div = defines a division of a document -->
+<div style="font-family: Arial, Helvetica, sans-serif; color: blue;">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, est. Molestias voluptatem placeat consectetur non incidunt natus animi sit, inventore deleniti! Quibusdam magnam incidunt vero consequuntur rem distinctio perferendis laborum?
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A harum blanditiis nisi quaerat! Qui perferendis amet dignissimos, temporibus quae magnam fugiat, velit a sed, accusamus culpa assumenda quaerat unde ex.
+    </p>
+</div>
+<br><br>
+
+<h2>Embededs and iframe</h2>
+<!--iframe = used to embed content from other source to webpage. can mimik a site eg ads and hacking tech-->
+<iframe style="border: 0" src="page2.html" width="750" height="100"></iframe>  <!--border = 0 removes the default border; page 2 here is open in real time -->
+
+<br><br>
+<h2>FORMS</h2>
+<!--FORM-->
+<form action="action_page.php" method="post">         <!--action send data to a page; get method: append data to url, mainly used for searching query; post method: for secure sending -->
+    <div>   <!--helps to separate the names to diff section-->
+        <label for="fname">First Name:</label>    <!--adds label to input for description, for helps to associate label with an id-->
+        <input type="text" id="fname" name="fname" placeholder="Praise" required> <!--type: defines input type; name: gives variable name on submission, placeholder: is default guide to what u expect from user; if required: cant submit empty field-->
+    </div>
+    <br>
+    <div>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Gene">
+    </div>
+    <br>
+    <div>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="password" maxlength="12" required>
+    </div>
+    <br>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="anymail45@gmail.com" required>
+    </div>
+    <br>
+    <div>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="08012345678">
+    </div>
+    <br>
+    <div>
+        <label for="bday">Birthday:</label>
+        <input type="date" id="bday" name="bday">
+    </div>
+    <br>
+    <div>
+        <label for="qty">Quantity:</label>
+        <input type="number" id="qty" name="qty" min="0" max="100" value="0">  <!--values is default value-->
+    </div>
+    <br>
+    <div>
+        <label for="title">Title:</label> <!--radio buttons are used to check an option-->
+        <label for="Mr">Mr</label>
+        <input type="radio" id="Mr" name="title" value="Mr.">  <!--if they all have same name, only one can be selected; value assign a default value to that selected radio button-->
+
+        <label for="Mrs">Mrs</label>
+        <input type="radio" id="Mrs" name="title" value="Mrs.">
+
+        <label for="Miss">Miss</label>
+        <input type="radio" id="Miss" name="title" value="Miss.">
+    </div>
+    <br>
+    <div>
+        <label for="payment">payment</label>
+        <select name="payment" id="payment">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="verve">Verve</option>
+        </select>
+    </div>
+    <br>
+    <div>  <!--basically for yes or no or for muliple select of options-->
+        <label for="sub">subscribe</label>
+        <input type="checkbox" id="sub" name="sub">
+    </div>
+    <br>
+    <div>
+        <p>Comment</p>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+        <input type="reset" id="resetbtn"> <!--this clears the form input; id is optional for use in css or js-->
+    </div>
+    <br>
+    <div>
+        <input type="submit">
+        <!--<button type="submit" id="submitbutton">Submit form</button>--> 
+    </div>
+    
+</form>
+<br>
+<a href="#top">Go to top</a>        <!-- href = "#"   will just link to null on click-->
+    <script src="index.js"></script>
+</body>
+</html>

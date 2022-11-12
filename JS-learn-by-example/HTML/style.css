@@ -1,0 +1,159 @@
+/* Cascading style Sheets (CSS)*/
+/* Ctrl + /  = comment a line*/
+/*  */
+
+#p2 {            /* property to an id */
+background-color: whitesmoke;
+
+/* fonts */
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* plenty fonts for contingency in case one fails in a browser */
+font-style: italic;
+font-weight: bold;
+text-decoration: red dotted underline;
+font-size: 18px;
+
+}
+
+.odd {              /* font color property to a class */
+    color: black;
+}
+
+/* Border*/
+#p3 {
+border: groove;
+/* border-top-style: dotted; */
+/* border-top-color: red; */
+border-width: 5px;      /*border thickness and visibility*/
+border-color: gold;
+border-radius: 10px;     /* the curve */
+padding: 5px;       /* spacing btwn text and border */
+
+}
+
+/* BACKGROUND */
+#p1 {
+background: linear-gradient(to left, skyblue, white);
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+body {
+    background-image: url("./contents/background.jpeg"); /* ./ for relative path */ 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* MARGINS: the space around an element */
+#box1 {
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: lightgoldenrodyellow;
+    padding: 10px;
+    
+    /* sticks to center */
+    margin-left: auto ;
+    margin-right: auto;
+}
+
+#box2 {
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: burlywood;
+    /* margin-left: 50px;      push left by 50px */
+    margin-left: auto;        /*dynamically resize to right*/
+
+}
+
+img {
+    float: left;
+}
+
+/* POSITIONS */
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    font-size: 25px;
+    text-align: center;
+    background: yellowgreen;
+     /* position: relative;       /* can be moved relative to some point of origin */
+    /* top: 50px;
+       left: 50px;
+     */
+
+     /* position: absolute;         searches for the parent that is positioned non static and moves relative to it; if its in the div section of another box, it movers relative to its cordinates */
+
+     /* position: fixed;        it doesnt change its position on scroll*/
+
+     /* position: sticky;  sticks to top or bottom the snap back to position in scroll back 
+     top: 0px;
+     buttom: 0px;
+     */
+
+
+}
+
+#float{
+    /* clear: both; */  /*this clears the float*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* PSEUDO CLASS */
+a:link {
+    color: black;  /*anything with a tag thats a link will inherit this color*/
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: red; /*can be used on lists and button too*/
+}
+
+li:nth-child(even){  /*highlight all even, u can pass in a number*/
+    background-color: yellow;
+}
+li:nth-child(3n){ /* highlight every 3rd element 3n + 1, give offset of 1 the highlight every 3rd*/
+    background-color: yellow;
+}
+
+/* SHADOWS */
+h1 {
+    text-align: center;
+    text-shadow: 5px 5px 5px grey; /* +-x +-y spread */
+}
+
+/* ANIMATION */
+#t-box {
+    border: 4px solid;
+    width: 300px;
+    height: 150px;
+    font-size: 55px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    animation: mySlide 3s 1;
+}
+
+#t-box:hover {
+    animation: colorchange 3s infinite;
+}
+@keyframes mySlide {
+    from {margin-left: 100%}
+    to {margin-left: 0%;}
+}
+@keyframes colorchange {
+    0%{color: red;}
+    20%{color: greenyellow;}
+    40%{color: blue;}
+    60%{color:yellow;}
+    80%{color: green;}
+    100%{color: black;}
+
+}

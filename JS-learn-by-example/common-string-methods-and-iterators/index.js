@@ -21,3 +21,14 @@ my_currency = my_num.toLocaleString("en-US", {style: "currency", currency: "USD"
 myPercent = my_num.toLocaleString (undefined, {style: "percent"}); // formats to percentage
 myKm = my_num.toLocaleString (undefined, {style: "unit", unit: "kilometers"});
 let duplicated  = username.repeat(4); //duplicates username 6 times
+//REPLACE AT INDEX
+function replace() {
+    var str = 'Hello World';
+    str = setCharAt(str,4,'a');
+    alert(str);
+}
+
+function setCharAt(str,index,chr) {
+    if(index > str.length-1) return str;
+    return str.substring(0,index) + chr + str.substring(index+1);
+}

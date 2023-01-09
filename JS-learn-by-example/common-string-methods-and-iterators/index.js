@@ -20,3 +20,4 @@ my_num = my_num.toLocaleString("en-US"); // this formats number as 123,456.789
 my_currency = my_num.toLocaleString("en-US", {style: "currency", currency: "USD"}); 
 myPercent = my_num.toLocaleString (undefined, {style: "percent"}); // formats to percentage
 myKm = my_num.toLocaleString (undefined, {style: "unit", unit: "kilometers"});
+duplicated  = username.repeat(4); //duplicates username 6 times

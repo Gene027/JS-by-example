@@ -9,7 +9,7 @@ let trimmed = username.trim(); //trim whitespaces
 let upper = username.toUpperCase();
 //let formatted_csv = csv.replaceAll(",", "-"); //replaces all comma with dash 
 
-let firstname = username.slice(0, 6); // last char not inclusive
+let firstname = username.slice(0, 6); // last char not inclusive; args (start, stop)
 let firstname_1 = username.slice(0, username.indexOf(" ")); //auto split at space
 let lastName = username.substring(firstname.length + 1);   //returns everything after the firstname and the space
 let lastname = username.slice(7); // takes from char 7 to the end
